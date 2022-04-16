@@ -1,0 +1,10 @@
+{
+    "name": "fundamentals",
+    "devDependencies": {
+        "@types/node": "^14"
+    },
+    "dependencies": {
+        "@pulumi/docker": "^3.2.0",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}
