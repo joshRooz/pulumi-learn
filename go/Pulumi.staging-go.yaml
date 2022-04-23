@@ -1,0 +1,10 @@
+config:
+  fundamentals-go:mongo_password:
+    secure: AAABAMkhzf8P9DqYXObdZEolBXEDSelQjsL8ptCcnIurx6RI2aGhHGaN6h6G+Cs=
+  fundamentals-go:backend_port: "3000"
+  fundamentals-go:database: cart
+  fundamentals-go:frontend_port: "3004"
+  fundamentals-go:mongo_host: mongo
+  fundamentals-go:mongo_port: "27017"
+  fundamentals-go:mongo_username: admin
+  fundamentals-go:node_environment: development

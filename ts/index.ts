@@ -36,6 +36,7 @@ const frontend = new docker.Image("frontend", {
 
 const mongoImage = new docker.RemoteImage("mongo", {
   name: "mongo:bionic",
+  keepLocally: true,
 })
 
 
@@ -97,9 +98,9 @@ const frontendContainer = new docker.Container("frontendContainer", {
 
 const dataSeedContainer = new docker.Container("dataSeedContainer", {
   image: mongoImage.repoDigest,
-  name: "dataSeed",
+  name: `dataSeed-${stack}`,
   mustRun: false,
-  rm: true,
+  //rm: true,  // if uncommented resource needs to be manually removed from state
   mounts: [
     {
       target: "/home/products.json",

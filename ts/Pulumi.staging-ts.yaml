@@ -1,0 +1,10 @@
+config:
+  fundamentals-ts:backend_port: "3000"
+  fundamentals-ts:database: cart
+  fundamentals-ts:frontend_port: "3002"
+  fundamentals-ts:mongo_host: mongo
+  fundamentals-ts:mongo_password:
+    secure: AAABACaaZVPjsio6PcY/XqFdqKjJc72/gC11Wltg3NbsF4MUbPCbpA==
+  fundamentals-ts:mongo_port: "27017"
+  fundamentals-ts:mongo_username: admin
+  fundamentals-ts:node_environment: development

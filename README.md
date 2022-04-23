@@ -8,9 +8,9 @@ Port definitions removed from backend and mongo containers to avoid `pulumi up` 
 # dataSeedContainer is removed automatically in the resource definition
 # but pulumi state doesn't appear to know. manually remove it from
 # state to cleanly destroy
-stack="dev"
+lang="go" ; stack="dev-${lang}"
 pulumi state delete \
-  urn:pulumi:${stack}::fundamentals::docker:index/container:Container::dataSeedContainer \
+  "urn:pulumi:${stack}::fundamentals-${lang}::docker:index/container:Container::dataSeedContainer" \
   -y -s "${stack}" && \
   pulumi destroy -s "${stack}" -y
 
